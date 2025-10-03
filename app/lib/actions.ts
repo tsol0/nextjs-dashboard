@@ -103,7 +103,7 @@ export async function deleteInvoice(id: string) {
     
   } catch (error) {
     console.log(error);
-    return {message: 'Databse Error: Failed to Delete invoice'}
+    // return {message: 'Databse Error: Failed to Delete invoice'}
   }
   revalidatePath('/dashboard/invoices');
 }
